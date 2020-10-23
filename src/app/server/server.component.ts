@@ -8,6 +8,10 @@ export class ServerComponent{
   serverID: number = 10;
   serverStatus: string = 'Offline';
 
+  constructor(){
+
+  }
+
   getServerStatus(){
     return this.serverStatus;
   }
