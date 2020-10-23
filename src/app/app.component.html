@@ -1,20 +1,12 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+-->
+<app-header></app-header>
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-
-            <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
-            <p *ngIf="showSecret">Secret Password = tuna</p>
-            <div
-              *ngFor="let logItem of log; let i=index"
-              [ngStyle]="{backgroundColor: logItem >= 4 ? 'blue' : 'white'}"
-              [ngClass]="{'white-text': logItem >= 4}">
-              {{ logItem }}
-            </div>
+    <div class="col-md-12">
+      <app-recipes></app-recipes>
+      <app-shopping-list></app-shopping-list>
     </div>
   </div>
 </div>
